@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">BBU</h1>
+        <nav>
+            <a href="#" class="nav-link">首页</a>
+            <a href="#" class="nav-link">音乐库</a>
+            <a href="#" class="nav-link">设置</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="audio-player">
+            <audio id="myAudio">
+                <source src="./music/9b5c_65d8_91f5_dd348ed976195076ccb16466da2bc2de.mp3" type="audio/mpeg">
+            </audio>
+            <button class="play-button" id="playButton">
+                <span class="play-icon">▶</span>
+            </button>
+            <div class="audio-controls">
+                <input type="range" id="progressBar" class="progress-bar" value="0">
+                <div class="time-display">
+                    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                </div>
+                <input type="range" id="volumeControl" class="volume-control" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+
+        <div class="audio-info">
+            <h2 class="audio-title">我要报警了</h2>
+            <p class="audio-artist">王珅</p>
+        </div>
+
+        <div class="chat-interface">
+            <div class="message-display">
+                <!-- 消息内容将通过 JavaScript 动态添加 -->
+            </div>
+            <div class="input-area">
+                <input type="text" class="message-input" placeholder="请在这里输入您的消息...">
+                <button class="send-button">发送</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-icon">微信</a>
+            <a href="#" class="social-icon">微博</a>
+            <a href="#" class="social-icon">QQ</a>
+        </div>
+        <p class="copyright">© 2024 BBU. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
